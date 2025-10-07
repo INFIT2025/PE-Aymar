@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plan de Entrenamiento INFIT - Nivel 1</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #000;
+            color: #fff;
+        }
+        .active-day {
+            background-color: #FFC107 !important;
+            color: #1a1a1a !important;
+            border-color: #FFC107 !important;
+        }
+    </style>
+</head>
+<body class="bg-black text-white">
+
+    <div class="container mx-auto p-4 md:p-8 max-w-6xl">
+
+        <header class="text-center mb-10">
+            <img src="inf_logo.png" alt="Logotipo INFIT" class="mx-auto h-20 mb-4"> 
+            
+            <p class="text-xl font-semibold text-white mb-2">¡Bienvenid@, Aymar!</p> 
+            <h1 class="text-5xl font-bold text-[#FFC107] uppercase tracking-wider">Tu Plan de Entrenamiento Mensual</h1>
+            <p class="mt-4 text-lg max-w-3xl mx-auto text-gray-300">
+                <strong>Nivel 1</strong>. Este plan de entrenamiento se centrará en ejercicios básicos y compuestos para desarrollar una base sólida de fuerza y masa muscular. Duración: <strong>4 Semanas</strong>.
+            </p>
+        </header>
+
+        <main class="grid lg:grid-cols-3 gap-8">
+            <div class="lg:col-span-2 bg-[#1a1a1a] p-6 rounded-2xl shadow-lg border border-gray-800">
+                <h2 class="text-3xl font-bold text-[#FFC107] mb-6 text-center">🏋️ Rutina Semanal</h2>
+                
+                <nav id="day-selector" class="flex flex-wrap justify-center gap-2 md:gap-4 mb-6">
+                    <button data-day="lunes" class="day-btn py-3 px-6 bg-gray-800 border-2 border-gray-700 rounded-full text-white font-semibold transition-all duration-300 hover:bg-[#FFC107] hover:text-black hover:border-[#FFC107]">Lunes</button>
+                    <button data-day="martes" class="day-btn py-3 px-6 bg-gray-800 border-2 border-gray-700 rounded-full text-white font-semibold transition-all duration-300 hover:bg-[#FFC107] hover:text-black hover:border-[#FFC107]">Martes</button>
+                    <button data-day="miercoles" class="day-btn py-3 px-6 bg-gray-800 border-2 border-gray-700 rounded-full text-white font-semibold transition-all duration-300 hover:bg-[#FFC107] hover:text-black hover:border-[#FFC107]">Miércoles</button>
+                    <button data-day="jueves" class="day-btn py-3 px-6 bg-gray-800 border-2 border-gray-700 rounded-full text-white font-semibold transition-all duration-300 hover:bg-[#FFC107] hover:text-black hover:border-[#FFC107]">Jueves</button>
+                    <button data-day="viernes" class="day-btn py-3 px-6 bg-gray-800 border-2 border-gray-700 rounded-full text-white font-semibold transition-all duration-300 hover:bg-[#FFC107] hover:text-black hover:border-[#FFC107]">Viernes</button>
+                    <button data-day="finde" class="day-btn py-3 px-6 bg-gray-800 border-2 border-gray-700 rounded-full text-white font-semibold transition-all duration-300 hover:bg-[#FFC107] hover:text-black hover:border-[#FFC107]">Fin de Semana</button>
+                </nav>
+
+                <div id="content-display" class="bg-black p-6 rounded-xl min-h-[25rem] transition-opacity duration-500">
+                    <p class="text-gray-400 text-center py-20">Selecciona un día para ver los detalles de tu rutina.</p>
+                </div>
+            </div>
+
+            <aside class="lg:col-span-1 grid gap-8">
+                <div class="bg-[#1a1a1a] p-6 rounded-2xl shadow-lg border border-gray-800">
+                    <h2 class="text-2xl font-bold text-[#FFC107] mb-4">💡 Consideraciones Clave</h2>
+                    <ul class="space-y-4 text-gray-300 list-disc list-inside">
+                        <li>
+                            <h3 class="font-bold text-lg text-white">Calentamiento:</h3>
+                            <p class="text-gray-400">Tren Inferior: Cardio de 5-8 minutos a ritmo ligero. Tren Superior: Laterales, Frontales, curl de bíceps con peso ligero (10 Reps / 2 Series).</p>
+                        </li>
+                        <li>
+                            <h3 class="font-bold text-lg text-white">Enfriamiento:</h3>
+                            <p class="text-gray-400">Al terminar, realiza estiramientos o baja la intensidad para permitir que tu cuerpo se enfríe adecuadamente.</p>
+                        </li>
+                        <li>
+                            <h3 class="font-bold text-lg text-white">Progresión:</h3>
+                            <p class="text-gray-400">Aumenta gradualmente el peso conforme te fortalezcas. Debe ser un peso que te rete, pero evita excederte para prevenir lesiones.</p>
+                        </li>
+                        <li>
+                            <h3 class="font-bold text-lg text-white">Variación:</h3>
+                            <p class="text-gray-400">Es importante cambiar la rutina cada 4 semanas para evitar el estancamiento y mantener la motivación.</p>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="bg-[#1a1a1a] p-6 rounded-2xl shadow-lg border border-gray-800">
+                    <h2 class="text-2xl font-bold text-[#FFC107] mb-4">🏆 Pilares del Éxito</h2>
+                    <ul class="space-y-4 text-gray-300 list-disc list-inside">
+                        <li>
+                            <h3 class="font-bold text-lg text-white">Descanso:</h3>
+                            <p class="text-gray-400">Crucial para la recuperación muscular. Asegúrate de dormir 7-8 horas, escuchando siempre a tu cuerpo.</p>
+                        </li>
+                        <li>
+                            <h3 class="font-bold text-lg text-white">Alimentación:</h3>
+                            <p class="text-gray-400">Es la base que dará los nutrientes necesarios a tu cuerpo para el logro de tus objetivos.</p>
+                        </li>
+                        <li>
+                            <h3 class="font-bold text-lg text-white">Constancia y Disciplina:</h3>
+                            <p class="text-gray-400">Recuerda que estas son la clave del éxito.</p>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+        </main>
+
+        <footer class="text-center mt-12 py-6 border-t border-gray-800">
+            <p class="text-[#FFC107] font-semibold">Tu Mejor Versión. INFIT.</p>
+        </footer>
+
+    </div>
+
+    <script>
+        const trainingData = {
+            lunes: {
+                group: "Piernas (Enfoque Frontal) + Abs",
+                exercises: [
+                    "Extensiones (15/12/10/8/6 Reps)",
+                    "Flexiones (15/12/10/8/6 Reps)",
+                    "Sentadilla (Mancuerna) (15/12/10/8/6 Reps)",
+                    "Costurera (15/12/10/8/6 Reps)"
+                ],
+                abs: "Planchas (30 segundos / 4 Sets) + Tijeras (10 por pierna / 4 Sets)",
+                rest: "1 minuto",
+                cardio: "10 a 15 minutos - Ritmo ligero"
+            },
+            martes: {
+                group: "Espalda + Abs",
+                exercises: [
+                    "Jalón Abierto (15/12/10/8/6 Reps)",
+                    "Jalón Cerrado (15/12/10/8/6 Reps)",
+                    "Remo sentado (15/12/10/8/6 Reps)"
+                ],
+                abs: "Encogimientos (en banco) - 4 Series - 10 Repeticiones",
+                rest: "1 minuto",
+                cardio: "10 a 15 minutos - Ritmo ligero"
+            },
+            miercoles: {
+                group: "Pecho + Hombro",
+                exercises: [
+                    "Press horizontal (Mancuerna) (15/12/10/8/6 Reps)",
+                    "Press Inclinado (15/12/10/8/6 Reps)",
+                    "Press militar (15/12/10/8/6 Reps)",
+                    "Laterales (15/12/10/8/6 Reps)"
+                ],
+                abs: "Crunch abdomen (15 Reps / 4 Series)",
+                rest: "1 minuto",
+                cardio: "10 a 15 minutos - Ritmo ligero"
+            },
+            jueves: {
+                group: "Pierna (Posterior + Glúteo) + Abs",
+                exercises: [
+                    "Hip thrust (mancuerna) (15/12/10/8/6 Reps)",
+                    "Peso Muerto (mancuerna) (15/12/10/8/6 Reps)",
+                    "Sentadilla Sumo (mancuerna) (15/12/10/8/6 Reps)"
+                ],
+                abs: "Encogimientos (en banco) - 4 Series - 10 Repeticiones",
+                rest: "1 minuto",
+                cardio: "10 a 15 minutos - Ritmo ligero"
+            },
+            viernes: {
+                group: "Brazo",
+                exercises: [
+                    "Curl (polea - barra) (15/12/10/8/6 Reps)",
+                    "Curl martillo (Mancuerna) (30 Reps / 4 Sets)",
+                    "Extensión (Cuerda) (15/12/10/8/6 Reps)",
+                    "Copa (Sentado) (15/12/10/8/6 Reps)"
+                ],
+                abs: "Planchas (30 segundos / 4 Sets) + Tijeras (10 por pierna / 4 Sets)",
+                rest: "1 minuto",
+                cardio: "10 a 15 minutos - Ritmo ligero"
+            },
+            finde: {
+                group: "Fin de Semana - Descanso",
+                message: "¡Recuerda que el <strong>Descanso</strong> es crucial para la recuperación muscular y el crecimiento! El <strong>Sábado</strong> tienes <strong>Descanso o actividad recreativa</strong> y el <strong>Domingo</strong> es <strong>Descanso</strong>. Tómate este tiempo para relajarte y dormir lo suficiente (Entre 7-8 horas)."
+            }
+        };
+
+        const daySelector = document.getElementById('day-selector');
+        const contentDisplay = document.getElementById('content-display');
+        const dayButtons = document.querySelectorAll('.day-btn');
+
+        daySelector.addEventListener('click', (e) => {
+            if (e.target.tagName === 'BUTTON') {
+                const selectedDay = e.target.dataset.day;
+                updateContent(selectedDay);
+                updateActiveButton(e.target);
+            }
+        });
+
+        function updateContent(day) {
+            const data = trainingData[day];
+            if (!data) return;
+
+            contentDisplay.style.opacity = '0';
+
+            setTimeout(() => {
+                let htmlContent = '';
+                if (day === 'finde') {
+                    htmlContent = `
+                        <div class="text-center py-10">
+                            <h3 class="text-3xl font-bold text-[#FFC107] mb-4">${data.group}</h3>
+                            <p class="text-lg text-gray-300">${data.message}</p>
+                        </div>
+                    `;
+                } else {
+                    // Texto común para series y repeticiones (el de Viernes se detalla en el ejercicio)
+                    const repText = day === 'viernes' ? "(Ver detalle en ejercicios)" : "(15/12/10/8/6 repeticiones)";
+
+                    htmlContent = `
+                        <h3 class="text-2xl font-bold text-[#FFC107]">${data.group}</h3>
+                        <div class="grid md:grid-cols-2 gap-6 mt-4">
+                            <div>
+                                <h4 class="text-xl font-bold text-white mb-2">Ejercicios ${repText}</h4>
+                                <ul class="space-y-2 list-disc list-inside">
+                                    ${data.exercises.map(ex => `<li class="text-gray-300">${ex}</li>`).join('')}
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-bold text-white mb-2">Abdomen</h4>
+                                <p class="text-gray-300 mb-4">${data.abs}</p>
+                                <h4 class="text-xl font-bold text-white mb-2">Descanso entre series</h4>
+                                <p class="text-gray-300 mb-4">${data.rest}</p>
+                                <h4 class="text-xl font-bold text-white mb-2">Cardio (Ritmo Ligero)</h4>
+                                <p class="text-gray-300">${data.cardio}</p>
+                            </div>
+                        </div>
+                    `;
+                }
+                contentDisplay.innerHTML = htmlContent;
+                contentDisplay.style.opacity = '1';
+            }, 300);
+        }
+        
+        function updateActiveButton(activeBtn) {
+            dayButtons.forEach(button => {
+               button.classList.remove('active-day');
+            });
+           activeBtn.classList.add('active-day');
+        }
+
+       document.addEventListener('DOMContentLoaded', () => {
+           // Seleccionar Lunes por defecto al cargar
+           document.querySelector('.day-btn[data-day="lunes"]').click();
+       });
+    </script>
+</body>
+</html>
